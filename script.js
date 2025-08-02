@@ -1,6 +1,6 @@
 // WeatherAPI.com API 키
 const API_KEY = '91b70eb115e741c8b4321057250806';
-const BASE_URL = 'http://api.weatherapi.com/v1';
+const BASE_URL = 'https://api.weatherapi.com/v1';
 
 // DOM 요소들
 const cityInput = document.getElementById('cityInput');
