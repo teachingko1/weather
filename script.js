@@ -145,7 +145,6 @@ function normalizeCityName(city) {
         '순창': 'Sunchang',
         '고창': 'Gochang',
         '부안': 'Buan',
-        '광주': 'Gwangju',
         '나주': 'Naju',
         '목포': 'Mokpo',
         '여수': 'Yeosu',
@@ -204,41 +203,7 @@ function normalizeCityName(city) {
         '하동': 'Hadong',
         '산청': 'Sancheong',
         '함양': 'Hamyang',
-        '거창': 'Geochang',
-        '합천': 'Hapcheon',
-        '하동': 'Hadong',
-        '산청': 'Sancheong',
-        '함양': 'Hamyang',
-        '남해': 'Namhae',
-        '사천': 'Sacheon',
-        '통영': 'Tongyeong',
-        '거제': 'Geoje',
-        '밀양': 'Miryang',
-        '양산': 'Yangsan',
-        '창녕': 'Changnyeong',
-        '울릉': 'Ulleung',
-        '울진': 'Uljin',
-        '봉화': 'Bonghwa',
-        '예천': 'Yecheon',
-        '칠곡': 'Chilgok',
-        '성주': 'Seongju',
-        '고령': 'Goryeong',
-        '청도': 'Cheongdo',
-        '영덕': 'Yeongdeok',
-        '영양': 'Yeongyang',
-        '청송': 'Cheongsong',
-        '의성': 'Uiseong',
-        '군위': 'Gunwi',
-        '경산': 'Gyeongsan',
-        '문경': 'Mungyeong',
-        '상주': 'Sangju',
-        '영천': 'Yeongcheon',
-        '영주': 'Yeongju',
-        '구미': 'Gumi',
-        '안동': 'Andong',
-        '김천': 'Gimcheon',
-        '경주': 'Gyeongju',
-        '포항': 'Pohang'
+        '남해': 'Namhae'
     };
     
     // 한글 도시명이 있으면 영어로 변환, 없으면 원래 입력값 반환
@@ -367,7 +332,7 @@ function setWeatherIcon(code, isDay) {
         1276: 'fas fa-bolt text-yellow-500' // 강한 비/천둥번개
     };
     
-    weatherIcon.className = `text-8xl mb-4 ${iconMap[code] || 'fas fa-cloud text-gray-400'}`;
+    weatherIcon.className = `weather-icon ${iconMap[code] || 'fas fa-cloud'}`;
 }
 
 // 예보 정보 표시
